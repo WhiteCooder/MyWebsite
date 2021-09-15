@@ -1,0 +1,228 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+
+  <title>Contact Form</title>
+  
+  
+  
+  
+<style>
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f2f2f2;
+}
+
+.contact-form {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin: 50px 0;
+}
+.contact-form > * {
+  width: 50%;
+}
+.contact-form .first-container {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://colorlib.com/etc/cf/ContactFrom_v17/images/bg-01.jpg") center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .first-container .info-container div {
+  margin: 24px 0;
+}
+.contact-form .first-container .info-container div h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding-bottom: 10px;
+}
+.contact-form .first-container .info-container div:first-of-type p {
+  max-width: 260px;
+  color: #999;
+}
+.contact-form .first-container .info-container div p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #00ad5f;
+}
+.contact-form .second-container {
+  padding: 30px;
+}
+.contact-form .second-container h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-form .second-container form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form .second-container form .form-group {
+  margin-bottom: 10px;
+}
+.contact-form .second-container form .form-group * {
+  min-height: 55px;
+  border: 1px solid #e6e6e6;
+  padding: 0 20px;
+}
+.contact-form .second-container form .form-group label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+  margin-top: -1px;
+}
+.contact-form .second-container form .form-group:first-of-type input {
+  width: 50.1%;
+  margin-right: -5px;
+}
+.contact-form .second-container form .form-group input {
+  width: 100%;
+  font-size: 15px;
+  margin-top: -2px;
+}
+.contact-form .second-container form .form-group input::placeholder, .contact-form .second-container form .form-group textarea::placeholder {
+  color: #999;
+}
+.contact-form .second-container form .form-group textarea {
+  width: 100%;
+  min-height: 80px;
+  resize: none;
+  padding: 10px 20px;
+  margin-top: -1px;
+}
+.contact-form .second-container form button {
+  width: 200px;
+  height: 50px;
+  background: #00ad5f;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 0;
+  position: relative;
+  left: calc(50% - 100px);
+  cursor: pointer;
+}
+.contact-form .second-container form button:hover {
+  background: #333;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-form {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contact-form {
+    flex-direction: column-reverse;
+  }
+  .contact-form > * {
+    width: 100%;
+  }
+  .contact-form .first-container {
+    padding: 40px 0;
+  }
+}
+</style>
+
+</head>
+
+<body translate="no" >
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contact-form">
+      <div class="first-container">
+        <div class="info-container">
+          <div><img class="icon"/>
+            <h3>Address</h3>
+            <p>Tatral Kahoon Teh: Choa Suidan Shah Dist: Chakwal Punjab Pakistan</p>
+          </div>
+          <div> <img class="icon"/>
+            <h3>Lets Talk</h3>
+            <p>+92-312-6647191</p>
+          </div>
+          <div><img class="icon"/>
+            <h3>Email Address</h3>
+            <!-- <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c4a7abaab0a5a7b084a1bca5a9b4a8a1eaa7aba9">[email&#160;protected]</a></p> -->
+            <h3>whitecooder@gmail.com</h3>>
+          </div>
+        </div>
+      </div>
+      <div class="second-container">
+        <h2>Send Us A Message</h2>
+        <form>
+          <div class="form-group">
+            <label for="name-input">Tell us your name*</label>
+            <input id="name-input" type="text" placeholder="First name" required="required"/>
+            <input type="text" placeholder="Last name" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="email-input">Enter your email*</label>
+            <input id="email-input" type="text" placeholder="Eg. example@email.com" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="phone-input">Enter phone number*</label>
+            <input id="phone-input" type="text" placeholder="Eg. +92-300-0000000" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="message-textarea">Message</label>
+            <textarea id="message-textarea" placeholder="Write us a message"></textarea>
+          </div>
+          <button>Send message</button>
+        </form>
+      </div>
+    </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+
+  
+      <script id="rendered-js" >
+//https://colorlib.com/wp/template/contact-form-v17/
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
